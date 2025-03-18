@@ -3,10 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="index.js"></script>
-    <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js" defer></script>
     
+    <title>Ramen noodles rating app</title>
+    </head>
+<body> 
+    
+
+    <header>
+        <h3>Ramen Rater</h3>
+</header>
+<main>
+    <div id="ramenMenu"></div>
+
+    <div id="ramenDetails">
+        <img id="ramen-img" src="" alt="selected Ramen">
+        <h2 id="ramen-name"></h2>
+        <h3 id="ramen-restaurant"></h3>
+        <p id="ramen-rating"></p>
+        <p id="ramen-comment"></p>
+    </div>
+    <div id="newramen">
+        <h2 class="new">Add new ramen</h2>
+        <form>
+            <label >Name</label>
+            <input type="text" placeholder="name">
+            <label >restaurant</label>
+            <input type="text"placeholder="restaurant">
+            <label >image</label>
+            <input type="text" placeholder="image">
+            <label >rating</label>
+            <input type="number" placeholder="rating">
+            <label >comment</label>
+            <input type="text" placeholder="comment">
+            
+            
+        </form>
+        <div id="button">
+        <button type="button" >New ramen</button>
+        </div>
+    </div>
+    
+
+   
+</main>
 </body>
 </html>

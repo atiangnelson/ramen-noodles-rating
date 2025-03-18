@@ -1,0 +1,114 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap');
+
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+
+
+header{
+    width: 49cm;
+    height: 1cm;
+    background-color: black;
+    padding: 0%;
+    margin: 0%;
+    
+    
+
+}
+header>h3{
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+        font-family: "Imperial Script", cursive;
+        font-weight: 600;
+        font-style: normal;
+      font-size: larger;
+      
+}
+
+#ramen-details{
+    height: 20vh;
+}
+form{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    
+    
+
+}
+.new{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+
+        font-family: "Imperial Script", cursive;
+        font-weight: 500;
+        font-style: normal;
+        font-size: larger;
+      
+      
+
+}
+
+#ramen-details{
+justify-content: center;
+align-items: center;
+display: flex;
+}
+
+
+#ramenMenu{
+    display: flex;
+    justify-content: center;
+    height: 40vh;
+    background-image: url(../asset/Shop\ Ramen.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+    
+
+
+#ramenMenu img {
+    width: 150px;
+    height: 100px;
+    
+}
+#button{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+      
+      
+
+
+#ramen-img{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+form>label{
+  font-family: "Imperial Script", cursive;
+  font-weight: 500;
+  font-style: normal;
+  font-size: large;
+  color:antiquewhite
+}
+#newramen{
+    background-image: url(../asset/Premium\ Vector\ _\ Ramen\ noodle\ logo\ design\ template\ with\ unique\ concept\ and\ creative\ element.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+}
