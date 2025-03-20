@@ -31,9 +31,8 @@ function addSubmitListener(){
   newramen.addEventListener("submit",function(e){
 e.preventDefault();
   })
-
+  
   const newRamen={
-    id: ramens.length + 1,
     name: document.getElementById("ramen-name").value,
     restaurant: document.getElementById("ramen-restaurant").value,
     image: document.getElementById("ramen-img").value,
@@ -41,7 +40,7 @@ e.preventDefault();
     comment:document.getElementById("ramen-comment").value
   };
   
-  img.classList.add("ramen-thumbnail");
+  
   img.addEventListener("click",()=>
     handleClick(newRamen));
     ramenMenu.appendChild(img);
