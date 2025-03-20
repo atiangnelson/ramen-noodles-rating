@@ -61,10 +61,17 @@ form{
 
 }
 
-#ramen-details{
+#ramenDetails{
 justify-content: center;
 align-items: center;
 display: flex;
+flex-direction: column;
+background-size: auto;
+background-color: aliceblue;
+}
+#ramen-img{
+    border-radius: 50%;
+    width: 200px;
 }
 
 

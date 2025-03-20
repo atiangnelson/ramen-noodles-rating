@@ -9,21 +9,21 @@ const ramens = [
   const ramenMenu=document.getElementById("ramenMenu")
  ramenMenu.innerHTML=``
 
- ramens.forEach(ramen=>{
+ ramens.forEach(ramens=>{
   const img = document.createElement("img")
-  img.src = ramen.image;
-  img.alt = ramen.name;
-  img.addEventListener("click",()=> handleClick(ramen))
+  img.src = ramens.image;
+  img.alt = ramens.name;
+  img.addEventListener("click",function() {handleClick(ramens)})
   ramenMenu.appendChild(img)
  }) }
 
- function handleClick(){
+ function handleClick(ramens){
 const ramenDetail =document.getElementById("ramenDetails");
-document.getElementById("ramen-img").scr=ramens.image;
-document.getElementById("ramen.name").textContent=ramens.name;
+document.getElementById("ramen-img").src=ramens.image;
+document.getElementById("ramen-name").textContent=ramens.name;
 document.getElementById("ramen-restaurant").textContent=ramens.restaurant;
-document.getElementById("ramen-rating").textContent="rating"
-document.getElementById("ramen-comment").textContent="comment"
+document.getElementById("ramen-rating").textContent=ramens.rating
+document.getElementById("ramen-comment").textContent=ramens.comment
 
  }
 function addSubmitListener(){
@@ -34,17 +34,13 @@ e.preventDefault();
 
   const newRamen={
     id: ramens.length + 1,
-    name: document.getElementById("name").value,
-    restaurant: document.getElementById("restaurant").value,
-    image: document.getElementById("image").value,
-    rating:document.getElementById("rating").value,
-    comment:document.getElementById("comment").value
+    name: document.getElementById("ramen-name").value,
+    restaurant: document.getElementById("ramen-restaurant").value,
+    image: document.getElementById("ramen-img").value,
+    rating:document.getElementById("ramen-rating").value,
+    comment:document.getElementById("ramen-comment").value
   };
-  ramens.push(newRamen)
-  const img =document.createElement("img");
-  img.src=newRamen.image;
-  img.alt=newRamen.name;
-
+  
   img.classList.add("ramen-thumbnail");
   img.addEventListener("click",()=>
     handleClick(newRamen));
@@ -53,12 +49,12 @@ e.preventDefault();
     
   };
   
-
+function main(){
 displayRamens();
 addSubmitListener();
-newRamen()
-
-
+handleClick()
+}
+main()
  
 
 
